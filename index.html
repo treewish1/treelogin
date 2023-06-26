@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" href="/loginstyle.css">
+    <style>
+        *{box-sizing: border-box}
+body{
+  background-image: url('bgi3.0.jpg');
+  background-size:1700px 1250px;
+  background-repeat: no-repeat;
+  background-position-y:center ;
+}
+
+h1{
+    color: #000a07;
+    text-align: center;
+    font-family: sofia, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+}
+.extra{
+  background-color:rgba(255, 255, 255, 0.55);
+  width: 800px;
+  border: 1px solid;
+  border-radius: 10px;
+  padding:15px;
+  margin:50px auto;
+  box-shadow: 10px,10px,10px rgba(0,0, 0, 2);
+}
+
+p{
+    text-align: center;
+    font-family: sofia, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+}
+
+/* Full-width input fields */
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border:2px dotted black;
+  border-radius: 10px;
+  background: #fbfcfc;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  /*background-color: rgb(79, 245, 95);
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;*/
+  background-color: #04aa6dbb;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:5;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+  /*padding-left: 20px;
+  margin:20px auto;*/
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+  background-color:rgba(131, 245, 142,0.85);
+  border: solid black 1px;
+  box-shadow: 5px,5px,5px rgba(0,0, 0, 2);
+  width:1000px;
+  margin:50px auto;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}
+
+    </style>
+</head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+<body>
+        <form action="action_page.php" style="border:1px solid #ccc">
+    <div class="container">
+        <link rel="stylesheet" href="signup.css">
+      <h1>Log In</h1>
+      <p>Login with your registered Email and Password.</p>
+      <hr>
+      <div class="extra">
+      <label for="Email"><h2><b>Email:</b></label></h2>
+      <input type="text" placeholder="Enter Email" name="Email" required="">
+  
+      <label for="psw"><h2><b>Password:</b></label></h2>
+      <input type="password" placeholder="Enter Password" name="psw" required="">
+      <p> <a href="https://samsun2505.github.io/resetpass.github.ai/" style="color:rgb(15, 121, 227)">Forgot Password</a>.</p>
+
+      <p>Dont have account <a href="https://samsun2505.github.io/signup.github.ai/" style="color: blue;">signup here</a></p>
+      <div class="clearfix">
+        <button type="button" class="cancelbtn">Cancel</button>
+        <button type="button" class="signupbtn">Login</button>
+      </div>
+    </div>
+    </div>
+  </form>
+</body></html>
